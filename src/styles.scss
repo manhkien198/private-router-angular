@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+.form-group {
+  width: 30vw;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+body {
+  padding: 50px;
+}
+.title {
+  text-align: center;
+}

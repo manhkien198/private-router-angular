@@ -1,0 +1,17 @@
+<nav
+  ngbNav
+  #nav="ngbNav"
+  [(activeId)]="active"
+  class="nav-pills justify-content-end"
+  *ngIf="isLoggedIn$ | async as isLoggedIn"
+>
+  <li ngbNavItem="1">
+    <a routerLink="/home" ngbNavLink class="text-dark">Home</a>
+  </li>
+  <li ngbNavItem="2">
+    <a routerLink="/about" ngbNavLink class="text-dark">About</a>
+  </li>
+  <li ngbNavItem="3">
+    <button class="btn" (click)="logout()" *ngIf="isLoggedIn">LogOut</button>
+  </li>
+</nav>

@@ -1,0 +1,16 @@
+<h1 class="title">Đăng nhập</h1>
+<form class="form-group" [formGroup]="loginForm" (ngSubmit)="submit()">
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Username"
+    formControlName="username"
+  />
+  <input
+    class="form-control"
+    type="password"
+    placeholder="password"
+    formControlName="password"
+  />
+  <button class="btn btn-primary" type="submit">Login</button>
+</form>
